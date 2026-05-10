@@ -10,8 +10,10 @@ pipeline {
 			steps {
 				echo "$fileToRun"
 				echo "$mavenCommand"
-				def runnerFile = sh "$fileToRun"
-				def runnerCommand = sh "$mavenCommand"
+				script {
+					def runnerFile = sh "$fileToRun"
+					def runnerCommand = sh "$mavenCommand"
+				}
 			}
 		}
 		stage("Test") {
