@@ -1,2 +1,2 @@
 @Library("JenkinsParameterizedProject") _
-pipeline()
+pipelineScript()
