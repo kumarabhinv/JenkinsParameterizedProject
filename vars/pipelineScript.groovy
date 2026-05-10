@@ -1,4 +1,6 @@
-pipeline {
+def call() {
+
+	pipeline {
 	
 	agent any
 	parameters {
@@ -37,5 +39,5 @@ pipeline {
 			echo "Pipeline execution complete."
 		}
 	}
-	
+	}
 }
