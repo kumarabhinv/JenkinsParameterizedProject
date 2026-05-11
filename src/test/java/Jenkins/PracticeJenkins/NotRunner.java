@@ -2,11 +2,11 @@ package Jenkins.PracticeJenkins;
 
 import org.testng.annotations.Test;
 
-public class Runner {
+public class NotRunner {
 	
 	@Test
 	public void runner() {
-		System.out.println("Ran from Main.");
+		System.out.println("Ran from Not Runner.");
 	}
 
 }

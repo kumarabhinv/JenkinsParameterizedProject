@@ -6,7 +6,7 @@ public class Runner {
 	
 	@Test
 	public void runner() {
-		System.out.println("Ran from Test.");
+		System.out.println("Ran from Runner.");
 	}
 
 }
