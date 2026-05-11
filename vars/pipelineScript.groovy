@@ -4,7 +4,7 @@ def call() {
 	
 	agent any
 	parameters {
-		string(name: "fileToRun", defaultValue: "/src/test/java/Jenkins/PracticeJenkins", description: "Provide the package plus file name to run, example: /Jenkins/PracticeJenkins")
+		string(name: "fileToRun", defaultValue: "Jenkins.PracticeJenkins.Test", description: "Provide the package plus file name to run, example: /Jenkins/PracticeJenkins")
 		string(name: "mavenCommand", defaultValue: "clean test", description: "Provide the command for Maven")
 	}
 	stages {
