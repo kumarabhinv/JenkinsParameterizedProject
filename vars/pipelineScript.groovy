@@ -23,8 +23,8 @@ def call() {
 		stage("Test") {
 			steps {
 				script {
-					sh "mvn"
-					sh "$mavenCommand -Dtest=$fileToRun"
+					echo "Running goals -> mvn $mavenCommand -Dtest=$fileToRun"
+					sh "mvn $mavenCommand -Dtest=$fileToRun"
 				}
 			}
 		}
