@@ -9,7 +9,7 @@ def call() {
 	}
 	
 	parameters {
-		string(name: "fileToRun", defaultValue: "Jenkins.PracticeJenkins.*", description: "Provide the package plus file name to run, example: Jenkins.PracticeJenkins.Test")
+		string(name: "fileToRun", defaultValue: "Jenkins.PracticeJenkins.**", description: "Provide the package plus file name to run, example: Jenkins.PracticeJenkins.Test")
 		string(name: "mavenCommand", defaultValue: "clean test", description: "Provide the command for Maven")
 	}
 	
