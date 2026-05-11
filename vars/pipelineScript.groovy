@@ -12,17 +12,13 @@ def call() {
 			steps {
 				echo "$fileToRun"
 				echo "$mavenCommand"
-				script {
-					def runnerFile = sh "$fileToRun"
-					def runnerCommand = sh "$mavenCommand"
-				}
 			}
 		}
 		stage("Test") {
 			steps {
 				script {
 					sh "mvn"
-					sh "$runnerCommand -Dtest=$runnerFile"
+					sh "$mavenCommand -Dtest=$fileToRun"
 				}
 			}
 		}
