@@ -22,7 +22,7 @@ def call() {
 			steps {
 				script {
 					sh "mvn"
-					sh "$runnerCommand"
+					sh "$runnerCommand -Dtest=$runnerFile"
 				}
 			}
 		}
